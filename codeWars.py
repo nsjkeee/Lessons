@@ -18,3 +18,16 @@ def likes(names):
         return "%s, %s and %s like this" % (names[0], names[1], names[2])
     else:
         return "%s, %s and %s others like this" % (names[0], names[1], len(names)-2)
+
+=============================
+#Filter all list
+def array_diff(a, b):
+    return [x for x in a if x not in b]
+
+#here another example 
+# squares = [x**2 for x in range(10)]
+=
+=============================
+# Calculate summ of all numbers n = 3 (1,2,3) that is % 2 == 0
+def solution(number):
+    return sum(x for x in range(number) if x % 2 == 0)
