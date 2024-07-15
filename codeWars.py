@@ -31,3 +31,8 @@ def array_diff(a, b):
 # Calculate summ of all numbers n = 3 (1,2,3) that is % 2 == 0
 def solution(number):
     return sum(x for x in range(number) if x % 2 == 0)
+
+=============================
+#Calculate all unique uppercase
+def duplicate_count(s):
+  return len([c for c in set(s.lower()) if s.lower().count(c)>1])
